@@ -10,7 +10,7 @@ folders, but couldn't find any support for that.
 
 Use rsync to filter out the unwanted files and folders.
 
-My main code folder is located in `$HOME/Code`. I then rsyc the `$HOME/Code` folder, with unwanted files and folders filtered out, to `"${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Code/"`
+My main code folder is located in `$HOME/Code`. I then rsyc the `$HOME/Code` folder (without the unwanted files and folders) to `"${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Code/"`
 
 <hr />
 
@@ -19,15 +19,15 @@ My main code folder is located in `$HOME/Code`. I then rsyc the `$HOME/Code` fol
 Clone this repo and execute `$ ./bootstrap.sh`
 
 
-
 ## NOTES
 
 http://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders/?utm_source=feedburner
 
     rsync -avz --exclude '*node_modules*' --exclude '*.git*' --exclude '*.DS_Store' '/Users/tatumszymczak/Code/' '/Users/tatumszymczak/Library/Mobile Documents/com~apple~CloudDocs/Code/'
 
-## plist file
-`/Users/tatumszymczak/Library/LaunchAgents/s3.sync.backup.plist`
+#### generated files
+`/Users/tatumszymczak/Library/LaunchAgents/rsync.code.to.icloud.folder.plist`
+`/usr/local/bin/rsync.code.to.icloud.folder.sh
 
 ## launchctl commands
     launchctl load /Users/tatumszymczak/Library/LaunchAgents/rsync.code.to.icloud.folder.plist
