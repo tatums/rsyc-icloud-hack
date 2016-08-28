@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>Label</key>
+  <dict>
+    <key>Label</key>
     <string>{{LABEL}}</string>
-
-		<key>ProgramArguments</key>
-		<array>
-			<string>/bin/sh</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/sh</string>
       <string>{{SCRIPT_PATH}}</string>
-		</array>
-
-		<key>WatchPaths</key>
-		<array>
+    </array>
+    <key>WatchPaths</key>
+    <array>
       <string>{{WATCH_PATH}}</string>
-		</array>
-
-	</dict>
+    </array>
+  </dict>
 </plist>
