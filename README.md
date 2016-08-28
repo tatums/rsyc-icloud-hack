@@ -10,6 +10,7 @@ folders, but couldn't find any support for that.
 
 Use rsync to filter out the unwanted files and folders.
 
+My main code folder is located in `$HOME/Code`. I then rsyc the `$HOME/Code` folder, with unwanted files and folders filtered out, to `"${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Code/"`
 
 <hr />
 
