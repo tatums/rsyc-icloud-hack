@@ -14,6 +14,14 @@ My main code folder is located in `$HOME/Code`. I then rsyc the `$HOME/Code` fol
 
 <hr />
 
+## SETUP
+
+Clone this repo and execute `$ ./bootstrap.sh`
+
+
+
+## NOTES
+
 http://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders/?utm_source=feedburner
 
     rsync -avz --exclude '*node_modules*' --exclude '*.git*' --exclude '*.DS_Store' '/Users/tatumszymczak/Code/' '/Users/tatumszymczak/Library/Mobile Documents/com~apple~CloudDocs/Code/'

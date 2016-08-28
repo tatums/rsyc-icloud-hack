@@ -3,17 +3,17 @@
 <plist version="1.0">
 	<dict>
 		<key>Label</key>
-		<string>rsync.code.to.icloud.folder</string>
+    <string>{{LABEL}}</string>
 
 		<key>ProgramArguments</key>
 		<array>
 			<string>/bin/sh</string>
-			<string>/usr/local/bin/rsync-code-to-icloud-folder.sh</string>
+      <string>{{SCRIPT_PATH}}</string>
 		</array>
 
 		<key>WatchPaths</key>
 		<array>
-			<string>/Users/tatumszymczak/Code</string>
+      <string>{{WATCH_PATH}}</string>
 		</array>
 
 	</dict>

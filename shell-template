@@ -1,0 +1,5 @@
+#!/bin/bash
+
+destination="${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Code/"
+
+rsync -avz --exclude '*node_modules*' --exclude '*.git*' --exclude '*.DS_Store' {{SRC}} "$destination" --delete
