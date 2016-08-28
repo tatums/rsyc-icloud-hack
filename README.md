@@ -18,9 +18,9 @@ http://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders/?utm_source=
     rsync -avz --exclude '*node_modules*' --exclude '*.git*' --exclude '*.DS_Store' '/Users/tatumszymczak/Code/' '/Users/tatumszymczak/Library/Mobile Documents/com~apple~CloudDocs/Code/'
 
 ## plist file
-/Users/tatumszymczak/Library/LaunchAgents/s3.sync.backup.plist
+`/Users/tatumszymczak/Library/LaunchAgents/s3.sync.backup.plist`
 
 ## launchctl commands
-launchctl load /Users/tatumszymczak/Library/LaunchAgents/rsync.code.to.icloud.folder.plist
-launchctl unload /Users/tatumszymczak/Library/LaunchAgents/rsync.code.to.icloud.folder.plist
-launchctl start rsync.code.to.icloud.folder
+    launchctl load /Users/tatumszymczak/Library/LaunchAgents/rsync.code.to.icloud.folder.plist
+    launchctl unload /Users/tatumszymczak/Library/LaunchAgents/rsync.code.to.icloud.folder.plist
+    launchctl start rsync.code.to.icloud.folder
